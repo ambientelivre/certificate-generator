@@ -18,38 +18,33 @@ $mailer->SMTPOptions = array(
     )
 );
 
-
-//$arquivo   = $_FILES["arquivo"];
-
-
 $mailer->Host = "$emailhost";
-$mailer->SMTPAuth = true;     // Enable SMTP authentication
+$mailer->SMTPAuth = true;     // Ativa SMTP authentication
 $mailer->IsSMTP();
-$mailer->isHTML(true);       // Set email format to HTML
-$mailer->Port = 587;
+$mailer->isHTML(true);       // Email em formato HTML
+$mailer->Port = 587;         // Porta padrão(587)
 
 // Ativar condição utf-8, para acentuação
 $mailer->CharSet = 'UTF-8';
 
-$mailer->Username = "$email"; // SMTP username
-$mailer->Password = "$emailsenha";    // SMTP password
-// email do destinatario
-$address = "$emaildestino";
+$mailer->Username = "$email";
+$mailer->Password = "$emailsenha";
 
 //$mailer->SMTPDebug = 1;
 $corpoMSG = "$mensagem";
-
-$mailer->AddAddress($address, "$nome");
+$mailer->AddAddress("$address");
 //$mailer->AddAddress("conta@gmail.com", "destinatario 2"); // 2º destinatário se querer enviar, se não, comente com //
 $mailer->From = "$email";
 $mailer->Sender = "$email";
-$mailer->FromName = ""; // Seu nome
+$mailer->FromName = "$SeuNome";
 // assunto da mensagem
 $mailer->Subject = $assunto;
 // corpo da mensagem
 $mailer->MsgHTML($corpoMSG);
 // anexar arquivo
-//$mailer->AddAttachment($arquivo['tmp_name'], $arquivo['name']  );
+
+$arquivo = "$nome.pdf";
+$mailer->AddAttachment($arquivo);
 
 
 if(!$mailer->Send()) {
