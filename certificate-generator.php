@@ -1,14 +1,12 @@
 <?php
 require_once 'Config.php';
 
-$nomes = Array();
-$file = fopen("$arquivoCSV", 'r');
-$linha = 1;
+$file = fopen("$arquivo_csv", 'r');
 while (($line = fgetcsv($file)) !== false)
 {
-  $nomemailcsv = implode('',$line);
-  $datacsv = "$nomemailcsv";
-  list($nome, $address) = explode("-", $datacsv);
+  $nome_email_csv = implode('',$line);
+  $data_csv = "$nome_email_csv";
+  list($nome, $address) = explode("-", $data_csv);
 
   include 'TextEmail/TextEmail.php';
   include 'SVG/SVG.php';
