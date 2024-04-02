@@ -1,5 +1,6 @@
 <?php 
 $emailhost = "mail.seuDominio.com.br";//coloque seu dominio de email
+$porta_smtp = "587";//coloque a porta do seu email
 $email = "mconta@SeuDomínio.com.br";//coloque o email de saida
 $emailsenha = "senha";//coloque a senha do seu email
 $arquivoCSV = "Nome.csv";//coloque o seu arquivo com as informações csv

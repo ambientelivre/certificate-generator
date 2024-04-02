@@ -17,7 +17,7 @@ $mailer->Host = "$email_host";
 $mailer->SMTPAuth = true;     // Ativa SMTP authentication
 $mailer->IsSMTP();
 $mailer->isHTML(true);       // Email em formato HTML
-$mailer->Port = 587;         // Porta SMTP(***)
+$mailer->Port = "$porta_smtp";
 
 // Ativar condição utf-8, para acentuação
 $mailer->CharSet = 'UTF-8';
