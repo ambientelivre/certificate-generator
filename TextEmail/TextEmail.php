@@ -41,7 +41,7 @@ $corpoMSG = <<<MSG
                                               lang="x-unicode">
                                               <p
 style="line-height: 100%;
-                                margin-bottom: 0cm">Boa Tarde $nome,<br>
+                                margin-bottom: 0cm">Boa Tarde <strong>$nome</strong>,<br>
                                               </p>
                                               <p
 style="line-height: 100%;

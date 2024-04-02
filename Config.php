@@ -11,4 +11,3 @@ $SeuNome = "Ambiente Livre";//Seu Nome *opcional
 $data = "25/03/2024 a 28/05/2024";
 $horas = "52";
 $curso = "Alfresco";
-?>
