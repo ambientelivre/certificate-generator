@@ -1,5 +1,9 @@
 <?php
-$assinatura = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+$assunto = "Certificado $curso";
+
+$assinatura = <<<ASS
+'<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -31,7 +35,6 @@ LinkedIn:
 <a href="https://www.linkedin.com/company/ambientelivre/">@ambientelivre</a>
 </body>
 </html>';
+ASS;
 
-$mensagem = "Boa Tarde <strong>$nome</strong>,<br>O seu certificado de conclusão do Treinamento $curso - $horas horas foi emitido com sucesso, e segue em anexo a este e-mail.<br>Desejamos sucesso com a ferramenta.<br>Atenciosamente<br>$assinatura";
-
-?>
+$mensagem = "Boa Tarde <strong>$nome</strong>,<br><br>O seu certificado de conclusão do Treinamento $curso - $horas horas foi emitido com sucesso, e segue em anexo a este e-mail.<br><br>Desejamos sucesso com a ferramenta.<br>Atenciosamente<br><br>--$assinatura";
