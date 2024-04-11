@@ -283,10 +283,10 @@ $SVG = <<<SVG
        y="-79.416771" /></g></svg>
 SVG;
 
-file_put_contents("$nome..svg", $SVG);
+file_put_contents("certificados/$nome..svg", $SVG);
 
-exec("inkscape --export-type=pdf '$nome'..svg");
+exec("inkscape --export-type=pdf certificados/'$nome'..svg");
 
-exec("pdfunite '$nome'..pdf Certificadoverso.pdf '$nome'.pdf");
+exec("pdfunite certificados/'$nome'..pdf versos/verso'$curso'.pdf certificados/'$nome'.pdf");
 
-exec("rm '$nome'..svg '$nome'..pdf");
+exec("rm certificados/'$nome'..svg certificados/'$nome'..pdf");

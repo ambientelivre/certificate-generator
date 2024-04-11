@@ -17,7 +17,7 @@ $mailer->Host = "$email_host";
 $mailer->SMTPAuth = true;     // Ativa SMTP authentication
 $mailer->IsSMTP();
 $mailer->isHTML(true);       // Email em formato HTML
-$mailer->Port = "$porta_smtp";
+$mailer->Port = "$porta_smtp";         // Porta SMTP(***)
 
 // Ativar condição utf-8, para acentuação
 $mailer->CharSet = 'UTF-8';
@@ -36,7 +36,7 @@ $mailer->Subject = $assunto;
 $mailer->MsgHTML($corpoMSG);
 
 // anexar arquivo
-$arquivo = "$nome.pdf";
+$arquivo = "certificados/$nome.pdf";
 $mailer->AddAttachment($arquivo);
 
 if(!$mailer->Send()) {

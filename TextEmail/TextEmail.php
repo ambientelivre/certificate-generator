@@ -50,11 +50,11 @@ style="line-height: 100%;
                                                 $curso - $horas horas
                                                 foi emitido com sucesso,
                                                 e segue em anexo a este
-                                                e-mail. </p>
+                                                e-mail.</p>
                                               <p
 style="line-height: 100%;
                                 margin-bottom: 0cm">Desejamos sucesso
-                                                com a ferramenta. </p>
+                                                com a ferramenta.</p>
                                               <p
 style="line-height: 100%;
                                 margin-bottom: 0cm">Atenciosamente <br>
