@@ -1,14 +1,16 @@
 <?php 
-$emailhost = "mail.seuDominio.com.br";//coloque seu dominio de email
+$email_host = "mail.seuDominio.com.br";//coloque seu dominio de email
 $porta_smtp = "587";//coloque a porta do seu email
-$email = "mconta@SeuDomínio.com.br";//coloque o email de saida
-$emailsenha = "senha";//coloque a senha do seu email
-$arquivoCSV = "Nome.csv";//coloque o seu arquivo com as informações csv
-$SeuNome = "Ambiente Livre";//Seu Nome *opcional
-
-
+$seu_email = "mconta@SeuDomínio.com.br";//coloque o email de saida
+$email_senha = "senha";//coloque a senha do seu email
+$arquivo_csv = "Nome.csv";//coloque o seu arquivo com as informações csv
+$seu_nome = "Ambiente Livre";//Seu Nome *opcional
 
 //info do treinamento
-$data = "25/03/2024 a 28/05/2024";
-$horas = "52";
+$data_certificado = "01/04/2024 a 10/04/2024";
+$horas = "32";
 $curso = "Alfresco";
+
+$dias_treinamento = "01/04/2024,02/04/2024,08/04/2024,09/04/2024,10/04/2024";
+
+$datas = explode(",", $dias_treinamento);

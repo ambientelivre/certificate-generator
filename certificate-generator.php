@@ -1,5 +1,6 @@
 <?php
 require_once 'Config.php';
+require_once 'logs/baixa_logs.php';
 
 $lista_entrada = array(""); 
 $aprovados = array("");

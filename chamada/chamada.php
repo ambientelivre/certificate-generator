@@ -21,7 +21,6 @@ $conta_data = 1;
     include 'Email/envia_email.php';
     array_push($aprovados, "$nome esta aprovado\n");
   }
-  echo $conta_data;
   if ($presença_aluno < $conta_data*0.75)
   {
     array_push($reprovados, "$nome esta reprovado\n");
